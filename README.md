@@ -37,25 +37,44 @@ json
 ```
 ## Example Output 
 ```
-  _id: "68853a895e95d47153f526a9"
-  product_id :"vijay_ragi_flour_unknown_unknown"
-  brand: "Unknown"
-  category:"atta_rice_oil_dals"
-  image_url:"https://cdn.zeptonow.com/production/tr:w-1280,ar-2400-2400,pr-true,f-a…"
-  last_updated:"2025-07-26T20:23:30.634+00:00"
-  name:"Vijay Ragi Flour"
-  price_history:0
-    Object:
-    date: "2025-07-26T20:23:30.634+00:00"
-     price:
+{
+    _id: "68853a895e95d47153f526a9"
+    product_id :"vijay_ragi_flour_unknown_unknown"
+    brand: "Unknown"
+    category:"atta_rice_oil_dals"
+    image_url:"https://cdn.zeptonow.com/production/tr:w-1280,ar-2400-2400,pr-true,f-a…"
+    last_updated:"2025-07-26T20:23:30.634+00:00"
+    name:"Vijay Ragi Flour"
+    price_history:0
       Object:
-         original:85
-         discounted: 85
-  quantity :"Unknown"
-  rating: null
+        date: "2025-07-26T20:23:30.634+00:00"
+          price:
+          Object:
+             original:85
+             discounted: 85
+    quantity :"Unknown"
+    rating: null
+}
 ```
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/<your-username>/grocery-inventory-scraper.git
 cd grocery-inventory-scraper
+```
+## 2.Set up virtual environment
+
+```
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+```
+## 3. Install requirements
+
+```
+pip install -r requirements.txt
+```
+## 4. Run the scraper
+
+```
+python main.py
+```
