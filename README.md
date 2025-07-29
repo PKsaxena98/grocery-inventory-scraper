@@ -18,6 +18,7 @@ A Python-based scraper that collects grocery product data from Zepto.com and sto
 
 ## 🧾 MongoDB Schema Overview
 
+'''
 {
   "product_id": "aashirvaad_atta_5kg",
   "name": "Aashirvaad Atta",
@@ -40,8 +41,7 @@ A Python-based scraper that collects grocery product data from Zepto.com and sto
       }
     }
   ]
-}
-
+} '''
 ## Example Output 
 
 _id: "68853a895e95d47153f526a9"
