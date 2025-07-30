@@ -1,10 +1,18 @@
 from pymongo import MongoClient
 from datetime import datetime
 import logging
+from dotenv import load_dotenv
+import os
 
-client = MongoClient("mongodb+srv://becoder123:Jexy098@data.mf41ozl.mongodb.net/?retryWrites=true&w=majority&appName=Data")
-db = client["grocery_scraper"]
-collection = db["products"]
+load_dotenv() 
+
+MONGO_URI = os.getenv("MONGO_URI")
+DB_NAME = os.getenv("DB_NAME")
+COLLECTION_NAME = os.getenv("COLLECTION_NAME")
+
+client = MongoClient(MONGO_URI)
+db = client[DB_NAME]
+collection = db[COLLECTION_NAME]
 
 def upsert_product(product_data):
     product_id = product_data["product_id"]
