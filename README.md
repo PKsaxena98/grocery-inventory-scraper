@@ -1,6 +1,6 @@
 # 🛒 Grocery Inventory Scraper (Zepto)
 
-A Python-based scraper that collects grocery product data from Zepto.com and stores it in MongoDB. The scraper supports scrolling, price history tracking, and category-wise scraping.
+A Python-based scraper that collects grocery product data from Zepto and stores it in MongoDB. The scraper supports scrolling, price history tracking, and category-wise scraping.
 
 ---
 
